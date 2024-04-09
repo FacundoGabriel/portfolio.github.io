@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(31 41 55);
+    color: #fff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container{
+    max-width: 100%;
+    width: 50%; 
+    margin: auto;
+}
+
+.header{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header p{
+    opacity: 0.9;
+}
+
+
+.hr{
+    margin-top: 30px;
+    opacity: 0.4;
+}
+
+/*------------- Seccion proyectos --------------*/
+
+.proyectos, .habilidades{
+    margin-top: 80px;
+    width: 100%;
+}
+
+.card_proyectos{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    flex-direction: row;
+
+}
+
+
+.card{
+    width: 100%;
+    padding: 26px 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+
+.img_proyecto{
+    transition: transform 0.5s ease;
+}
+
+.img_proyecto:hover{
+    transform: scale(1.1);
+}
+
+.img_proyecto img{
+    width: 350px;
+    border-radius: 15px;
+}
+
+
+
+
+.info_proyecto{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.btn_ver{
+    text-decoration: none;
+    color: #E0E7FF;
+    max-width: 80px;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 5px;
+    background: #6366F1;
+    transition: background 0.4s ease;
+    font-weight: bold;
+}
+
+.btn_ver:hover{
+    background: #444699;
+}
+
+
+/* ----------------- Habilidades -------------------- */
+
+
+.container_habilidades{
+    width: 100%;
+    border: 1px solid #E0E7FF;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    display: flex;
+    padding: 15px;
+    justify-content: left;
+    gap: 10px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+
+
+.tittle{
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+
+/* ------------- historia ---------*/
+
+.sobre_mi{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.historia{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+.antes, .despues{
+    border: 1px solid #6366F1;
+    width: 200px;
+    margin: 20px auto;
+}
+
+
+
+/* --------------- Redes sociales --------------------*/
+
+.container_redes{
+    margin-top: 80px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.redes_iconos{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.redes_iconos a{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+    width: 120px;
+    justify-content: center;
+    transition: box-shadow 0.3s ease;
+
+}
+
+.redes_iconos a:hover{
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+}
+
+
+.linkedin, .git, .ig, .correo{
+    border-radius: 10px;
+    box-shadow: 0 0px 3px rgba(255, 255, 255, 0.5);
+}
+
+.linkedin i, .git i, .ig i, .correo i{
+    font-size: 30px;
+}
+
+.linkedin a{
+    color: #0284C7;
+}
+
+.git a{
+    color: #FFFFFFCC;
+}
+
+.ig a{
+    color: #FFFFFFCC;
+}
+
+
+
+/*----------- formulario contacto --------------*/
+
+.contacto{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    height: 400px;
+}
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.input_nombre, .input_correo{
+    justify-content: space-between;
+}
+
+.input_nombre input, .input_correo input{
+    border: none;
+    background-color: hsla(0,0%,100%,.05);
+    padding: 10px;
+    width: 50%;
+    font-size: 16px;
+    color: #fff;
+}
+
+.input_nombre input::placeholder,
+.input_correo input::placeholder {
+    color: #c4c4c4;
+}
+
+
+.btn_enviar{
+    color: #E0E7FF;
+    max-width: 120px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background: #6366F1;
+    transition: background 0.4s ease;
+    font-weight: bold;
+    border: none;
+    display: block;
+    width: 100px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.btn_enviar:hover{
+    background: #444699;
+}
+
+
+.error{
+    background-color: #dc2626;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    width: 50%;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+.correcto{
+    background-color: #10B981;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0.75rem;
+    /* margin-top: 2.5rem; */
+    font-weight: bold;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+
+
+/*----- spinner cargando ----------*/
+
+.spinner_mostrar{
+    display: none;
+    text-align: left;
+}
+
+.spinner {
+    width: 70px;
+  }
+  
+  .spinner > div {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+  
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  }
+  
+  .spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+  }
+  
+  .spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+  }
+  
+  @-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% { -webkit-transform: scale(0) }
+    40% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bouncedelay {
+    0%, 80%, 100% { 
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    } 40% { 
+      -webkit-transform: scale(1.0);
+      transform: scale(1.0);
+    }
+  }
+
+
+/*----------- responsive --------------*/
+
+
+@media (max-width: 650px){
+
+    .container{
+        width: 100vw;
+    }
+
+    .proyectos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .info_proyecto{
+        align-items: center;
+    }
+
+    .card_proyectos{
+        width: 100%;
+
+    }
+
+    .header{
+        align-items: center;
+    }
+
+    .header h1{
+        font-size: 30px;
+    }
+
+    .hr{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .btn_ver{
+        width: 100px;
+    }
+
+    .container_habilidades{
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px;
+        margin: 25px auto auto;
+    }
+    
+    .redes_iconos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario{
+        align-items: center;
+    }
+
+    .input_nombre input, .input_correo input{
+        width: 300px;
+    }
+
+    .error, .correcto{
+        width: 95%;
+    }
+}
+
+
+@media (max-width: 380px){
+    .container_habilidades{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+/* @media (max-width: 300px){
+    .container_habilidades{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+} */
+
+
+
