@@ -25,7 +25,7 @@ formulario.addEventListener('submit', enviarEmail);
 // funciones
 
 function validarFormulario(e){
-    e.preventDefault();
+    // e.preventDefault();
 
     
     if(e.target.value.trim() === ''){
@@ -89,7 +89,7 @@ function validarEmail(email){
 }
 
 function enviarEmail(e){
-    e.preventDefault();
+    // e.preventDefault();
 
     spinner.style.display = 'flex';
     formulario.appendChild(spinner);
