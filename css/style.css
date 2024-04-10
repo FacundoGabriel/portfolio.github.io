@@ -456,7 +456,11 @@ body{
     .header h1{
         text-align: center;
         width: 100%;
-        font-size: 40px;
+        font-size: 45px;
+    }    
+    .header p{
+        font-size: 20px;
+        text-align: center;
     }
 
     .historia p{
@@ -476,9 +480,3 @@ body{
         padding: 0 10px;
     }
 }
-
-
-
-
-
-
