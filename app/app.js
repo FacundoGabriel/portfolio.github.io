@@ -1,8 +1,8 @@
 
 const infoEmail = {
     nombre: '',
-    email: ''
-
+    email: '',
+    mensaje: ''
 }
 
 // variables
@@ -12,12 +12,13 @@ const nombre = document.querySelector('#nombre');
 const inputEmail = document.querySelector('#email');
 const spinner = document.querySelector('#spinner')
 const btnEnviar = document.querySelector('#enviar');
+const inputMensaje = document.querySelector('#mensaje');
 
 // eventos
-nombre.addEventListener('blur', validarFormulario)
-inputEmail.addEventListener('blur', validarFormulario)
-
-formulario.addEventListener('submit', enviarEmail)
+nombre.addEventListener('input', validarFormulario);
+inputEmail.addEventListener('input', validarFormulario);
+inputMensaje.addEventListener('input',validarFormulario);
+formulario.addEventListener('submit', enviarEmail);
 
 
 
@@ -40,7 +41,6 @@ function validarFormulario(e){
         comprobarEmail();
         return;
     }
-
 
 
     limpiarAlerta(e.target.parentElement);
@@ -91,8 +91,6 @@ function validarEmail(email){
 function enviarEmail(e){
     e.preventDefault();
 
-
-
     spinner.style.display = 'flex';
     formulario.appendChild(spinner);
 
@@ -123,4 +121,6 @@ function comprobarEmail(){
         btnEnviar.style.opacity = '1';
         btnEnviar.disabled = false;
     }
+
 }
+
