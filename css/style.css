@@ -222,7 +222,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 60px;
-    height: 400px;
+    height: 700px;
 }
 
 
@@ -230,6 +230,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 40px;
+
 }
 
 .input_nombre, .input_correo{
@@ -245,8 +246,22 @@ body{
     color: #fff;
 }
 
+.input_mensaje textarea{
+    border: none;
+    background-color: hsla(0,0%,100%,.05);
+    padding: 10px;
+    width: 50%;
+    font-size: 18px;
+    color: #fff;
+    margin: auto;
+}
+
 .input_nombre input::placeholder,
 .input_correo input::placeholder {
+    color: #c4c4c4;
+}
+
+.input_mensaje textarea::placeholder{
     color: #c4c4c4;
 }
 
@@ -405,6 +420,9 @@ body{
         flex-wrap: wrap;
         gap: 50px;
         margin: 25px auto auto;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
     }
     
     .redes_iconos{
@@ -423,8 +441,29 @@ body{
     .error, .correcto{
         width: 95%;
     }
+
+    .input_mensaje textarea{
+        width: 80%;
+        display: flex;
+    }
+    .historia p{
+        text-align: center;
+        padding: 0 10px;
+    }
 }
 
+@media (max-width: 415px){
+    .header h1{
+        text-align: center;
+        width: 100%;
+        font-size: 40px;
+    }
+
+    .historia p{
+        text-align: center;
+        padding: 0 10px;
+    }
+}
 
 @media (max-width: 380px){
     .container_habilidades{
@@ -432,15 +471,14 @@ body{
         text-align: center;
         justify-content: center;
     }
+    .historia p{
+        text-align: center;
+        padding: 0 10px;
+    }
 }
 
-/* @media (max-width: 300px){
-    .container_habilidades{
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-    }
-} */
+
+
 
 
 
